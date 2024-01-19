@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "first"
+version = "0.1.0"
+description = ""
+authors = ["Aleksandr Sukhomlinov <100007482+iduwawl@users.noreply.github.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+colorama = "^0.4.6"
+
+[tool.poetry.scripts]
+say-hello = "first.scripts.say_hello:main"
+
+[tool.poetry.group.dev.dependencies]
+ipython = "^8.20.0"
+flake8 = "^7.0.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
